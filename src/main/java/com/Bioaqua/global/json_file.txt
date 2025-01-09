@@ -1,0 +1,133 @@
+
+
+### 1. **Création d'un utilisateur**
+
+#### Requête JSON
+```json
+{
+  "userName": "alice_smith",
+  "email": "alice@example.com",
+  "telephone": "555123456",
+  "password": "securepassword",
+  "roleNames": ["ADMIN", "EDITOR"]
+}
+```
+
+
+### 2. **Mise à jour d'un utilisateur**
+
+#### Requête JSON
+```json
+{
+  "id": 2,
+  "userName": "alice_smith_updated",
+  "email": "alice_updated@example.com",
+  "telephone": "555654321",
+  "password": "new_securepassword",
+  "roleNames": ["EDITOR"]
+}
+```
+
+
+
+### 3. **Création d'un rôle**
+
+#### Requête JSON
+```json
+{
+  "roleName": "MANAGER"
+}
+```
+
+
+
+### 4. **Mise à jour d'un rôle**
+
+#### Requête JSON
+```json
+{
+  "id": 3,
+  "roleName": "SENIOR_MANAGER"
+}
+```
+
+
+
+### 5. **Création d'un utilisateur avec un seul rôle**
+
+#### Requête JSON
+```json
+{
+  "userName": "bob_jones",
+  "email": "bob@example.com",
+  "telephone": "555987654",
+  "password": "bobpassword",
+  "roleNames": ["USER"]
+}
+```
+
+
+### 6. **Mise à jour d'un utilisateur sans changer les rôles**
+
+#### Requête JSON
+```json
+{
+  "id": 4,
+  "userName": "bob_jones_updated",
+  "email": "bob_updated@example.com",
+  "telephone": "555111222",
+  "password": "updated_bobpassword"
+}
+```
+
+
+### 7. **Création d'un utilisateur sans rôles**
+
+#### Requête JSON
+```json
+{
+  "userName": "guest_user",
+  "email": "guest@example.com",
+  "telephone": "555000111",
+  "password": "guestpassword"
+}
+```
+
+
+
+### 8. **Mise à jour d'un utilisateur pour supprimer tous les rôles**
+
+#### Requête JSON
+```json
+{
+  "id": 5,
+  "userName": "guest_user_updated",
+  "email": "guest_updated@example.com",
+  "telephone": "555222333",
+  "password": "updated_guestpassword",
+  "roleNames": []
+}
+```
+
+
+### 9. **Création d'un rôle avec un nom complexe**
+
+#### Requête JSON
+```json
+{
+  "roleName": "SUPER_ADMIN"
+}
+```
+
+
+
+### 10. **Mise à jour d'un rôle pour un nom plus simple**
+
+#### Requête JSON
+```json
+{
+  "id": 6,
+  "roleName": "ADMIN"
+}
+```
+
